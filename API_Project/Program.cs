@@ -1,6 +1,11 @@
 
 using API_Project.Data;
+using API_Project.Extentions;
+using API_Project.Services;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 namespace API_Project
 {
@@ -13,26 +18,26 @@ namespace API_Project
             // Add services to the container.
 
             builder.Services.AddControllers();
-            builder.Services.AddDbContext<ApplicationDB>(options=>
-            {
-                options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"));
-            });
+            builder.Services.AddApplicationServices(builder.Configuration);
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-            builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
+            //builder.Services.AddEndpointsApiExplorer();
+            //builder.Services.AddSwaggerGen();
 
+            builder.Services.AddAuthentication(builder.Configuration);
             var app = builder.Build();
-            app.UseCors(options => options.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:4200"));
+
+            app.UseCors(options => options.AllowAnyHeader()
+            .AllowAnyMethod().WithOrigins("https://localhost:4200"));
 
             // Configure the HTTP request pipeline.
-            if (app.Environment.IsDevelopment())
-            {
-                app.UseSwagger();
-                app.UseSwaggerUI();
-            }
+            //if (app.Environment.IsDevelopment())
+            //{
+            //    app.UseSwagger();
+            //    app.UseSwaggerUI();
+            //}
 
             app.UseHttpsRedirection();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
 
