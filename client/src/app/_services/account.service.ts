@@ -33,7 +33,6 @@ currentuser$=this.currentusersource.asObservable();
           localStorage.setItem('user',JSON.stringify(user))
           this.currentusersource.next(user);            
         } 
-        return user;
       })
     )
    }
