@@ -2,6 +2,7 @@
 using API_Project.Entities;
 using API_Project.Models;
 using API_Project.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Cryptography;
@@ -38,7 +39,7 @@ namespace API_Project.Controllers
                 token=_tokenService.CreateToken(user),
             };
         }
-
+        [Authorize]
         [HttpPost("login")]
         public async Task<ActionResult<UserDTO>> Login(LoginDTO loginDTO)
         {

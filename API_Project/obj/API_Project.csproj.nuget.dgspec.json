@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\For Learning\\The Basics\\.Net\\Projects\\API-Neil Cummings\\API_Project\\API_Project.csproj": {}
+    "D:\\For Learning\\The Basics\\.Net\\Projects\\API-Neil Cummings\\API_project\\API_Project.csproj": {}
   },
   "projects": {
-    "D:\\For Learning\\The Basics\\.Net\\Projects\\API-Neil Cummings\\API_Project\\API_Project.csproj": {
+    "D:\\For Learning\\The Basics\\.Net\\Projects\\API-Neil Cummings\\API_project\\API_Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\For Learning\\The Basics\\.Net\\Projects\\API-Neil Cummings\\API_Project\\API_Project.csproj",
+        "projectUniqueName": "D:\\For Learning\\The Basics\\.Net\\Projects\\API-Neil Cummings\\API_project\\API_Project.csproj",
         "projectName": "API_Project",
-        "projectPath": "D:\\For Learning\\The Basics\\.Net\\Projects\\API-Neil Cummings\\API_Project\\API_Project.csproj",
+        "projectPath": "D:\\For Learning\\The Basics\\.Net\\Projects\\API-Neil Cummings\\API_project\\API_Project.csproj",
         "packagesPath": "C:\\Users\\al-aqsa\\.nuget\\packages\\",
-        "outputPath": "D:\\For Learning\\The Basics\\.Net\\Projects\\API-Neil Cummings\\API_Project\\obj\\",
+        "outputPath": "D:\\For Learning\\The Basics\\.Net\\Projects\\API-Neil Cummings\\API_project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\al-aqsa\\AppData\\Roaming\\NuGet\\NuGet.Config",

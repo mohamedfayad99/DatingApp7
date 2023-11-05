@@ -1,6 +1,7 @@
 
 using API_Project.Data;
 using API_Project.Extentions;
+using API_Project.Middleware;
 using API_Project.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
@@ -24,8 +25,10 @@ namespace API_Project
             //builder.Services.AddSwaggerGen();
 
             builder.Services.AddAuthentication(builder.Configuration);
+
             var app = builder.Build();
 
+            app.UseMiddleware<ExceptionMiddleware>();
             app.UseCors(options => options.AllowAnyHeader()
             .AllowAnyMethod().WithOrigins("https://localhost:4200"));
 

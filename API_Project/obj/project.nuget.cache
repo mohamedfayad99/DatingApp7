@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FczSttQDIE5NufdRwCZ52D0zNXTqlVrDlzjObGufkrnG4X3X4lAKrjdfmBUq0I9h1QTxcjYGQDm/WBiKb3WZZQ==",
+  "dgSpecHash": "BW2wSa17QpbMVTpxODkkXukotTIuYjkJ00L28/jj/oLaPXtAff5zKCCF/2/nuulY03+yJ+nQ02kIMP//r4+nPQ==",
   "success": true,
-  "projectFilePath": "D:\\For Learning\\The Basics\\.Net\\Projects\\API-Neil Cummings\\API_Project\\API_Project.csproj",
+  "projectFilePath": "D:\\For Learning\\The Basics\\.Net\\Projects\\API-Neil Cummings\\API_project\\API_Project.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\al-aqsa\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\al-aqsa\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.9\\microsoft.aspnetcore.authentication.jwtbearer.7.0.9.nupkg.sha512",
